@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <Element name="about">
-        <div className="w-full px-4 md:px-20 my-16">
+        <div className="w-full px-4 md:px-20 my-16 dark:text-gray-200">
         <h1 className="text-3xl font-bold mb-5">About</h1>
         <p className="text-justify">
           Hello I'm Tanmoy, a MERN Stack Developer passionate about building
@@ -16,7 +16,7 @@ const About = () => {
         <h1 className="text-green-500 font-semibold text-xl">
           Education & Training
         </h1>
-        <p className="text-gray-700 text-justify">
+        <p className="text-gray-700 dark:text-gray-300 text-justify">
           Currently pursuing my Bachelor Of Computer Application(BCA) at
           Midnapore City College under Vidyasagar University. Along with my
           academic journey, I am dedicated to mastering Full Stack Web
@@ -30,7 +30,7 @@ const About = () => {
         <h1 className="text-green-500 font-semibold text-xl">
           Skill & Expertise
         </h1>
-        <ul className="list-disc ml-5 text-gray-700 space-y-2">
+        <ul className="list-disc ml-5 text-gray-700 dark:text-gray-300 space-y-2">
           <li>
             MERN Stack Development (MongoDB, Express.js, React.js, Node.js)
           </li>
@@ -48,7 +48,7 @@ const About = () => {
           Professional Experience
         </h1>
 
-        <ul className="list-disc ml-5 text-gray-700 space-y-2">
+        <ul className="list-disc ml-5 text-gray-700 dark:text-gray-300 space-y-2">
           <li>
             Developed <b>LearnStack</b>, a full-stack educational platform using
             the MERN stack.
@@ -73,7 +73,7 @@ const About = () => {
           Achievements & Awards
         </h1>
 
-        <ul className="list-disc ml-5 text-gray-700 space-y-2">
+        <ul className="list-disc ml-5 text-gray-700 dark:text-gray-300 space-y-2">
           <li>Built and completed multiple MERN Stack projects.</li>
           <li>Developed LearnStack, a full-stack educational platform.</li>
           <li>Created a Note Taking Application with CRUD functionality.</li>
@@ -89,7 +89,7 @@ const About = () => {
         <h1 className="text-green-500 font-semibold text-xl">
           Mission Statement
         </h1>
-        <p className="text-gray-700 text-justify">
+        <p className="text-gray-700 dark:text-gray-300 text-justify">
           To leverage my MERN Stack development skills to build impactful,
           scalable, and user-centric web applications while continuously growing
           as a software developer and contributing to innovative technology

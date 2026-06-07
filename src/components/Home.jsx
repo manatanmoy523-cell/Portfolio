@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <>
       <Element name="home">
-        <div className="w-full min-h-screen px-4 md:px-20 pt-24 flex items-center">
+        <div className="w-full min-h-screen px-4 md:px-20 pt-24 flex items-center bg-white dark:bg-gradient-to-br dark:from-slate-950 dark:via-slate-900 dark:to-slate-800">
           <div className="flex flex-col-reverse md:flex-row items-center">
             <div className="md:w-1/2 mt-12 md:mt-24 space-y-3">
               <span className="text-xl">Welcome In My Feed</span>

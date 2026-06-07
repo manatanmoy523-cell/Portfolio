@@ -7,7 +7,7 @@ import { FaGithubSquare } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <footer className="py-12">
+      <footer className="py-12 bg-gray-100 dark:bg-slate-900 dark:text-white">
         <div className="w-full px-4 md:px-20 my-16">
           <div className="items-center justify-center flex flex-col">
             <ul className="flex space-x-5">

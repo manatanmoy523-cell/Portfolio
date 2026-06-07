@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
 import { Link } from "react-scroll";
+import { FaMoon, FaSun } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({ darkMode, setDarkMode }) => {
   const [menu, setMenu] = useState(false);
 
   const navItems = [
@@ -35,7 +36,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-full px-4 md:px-20 shadow-md bg-white fixed top-0 left-0 right-0 z-50">
+    <div className="w-full px-4 md:px-20 shadow-lg backdrop-blur-md bg-white/90 dark:bg-slate-900/90 dark:text-white fixed top-0 left-0 right-0 z-50">
       <div className="flex justify-between items-center h-16">
         {/* Logo */}
         <div className="flex items-center space-x-2">
@@ -67,6 +68,12 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        <button
+          onClick={() => setDarkMode(!darkMode)}
+          className="p-3 rounded-full bg-gray-200 dark:bg-slate-700 hover:scale-110 duration-300"
+        >
+          {darkMode ? <FaSun /> : <FaMoon />}
+        </button>
 
         {/* Mobile Icon */}
         <div
@@ -79,7 +86,9 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {menu && (
-        <div className="md:hidden bg-white">
+        <div className={`md:hidden fixed top-16 left-0 w-full bg-white dark:bg-slate-900
+  text-black dark:text-white z-[999] shadow-lg transition-all duration-300
+  ${menu ? "translate-y-0 opacity-100" : "-translate-y-5 opacity-0 pointer-events-none"}`}>
           <ul className="flex flex-col items-center gap-6 py-8">
             {navItems.map(({ id, text, to }) => (
               <li key={id}>
