@@ -4,6 +4,7 @@ const bookstore = "/bookstore.png";
 const learnstack = "/learnStack.png";
 const note_taking = "/note_taking_pj.png";
 const stopwatch = "/stopwatch.png";
+const Ai_Chat="/Ai_Chat.png"
 const Project = () => {
   const cardItem = [
     {
@@ -41,6 +42,14 @@ const Project = () => {
       video: "###",
       source: "https://github.com/manatanmoy523-cell/stopwatch",
     },
+    {
+      id: 5,
+      logo: Ai_Chat,
+      name: "Ai-Assitant",
+      desc: "AI-Chat-App",
+      video: "https://drive.google.com/file/d/1uivBHRlhnstWQ-xfwIJYe1bxa86gNzeb/view?usp=sharing",
+      source: "https://github.com/manatanmoy523-cell/ai-assistant-mern",
+    }
   ];
   return (
     <>
